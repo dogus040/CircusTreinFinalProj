@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="lbAnimalsTotal" Margin="246,53,246,258"/>
+        <Label Content="Totaal aantal dieren" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

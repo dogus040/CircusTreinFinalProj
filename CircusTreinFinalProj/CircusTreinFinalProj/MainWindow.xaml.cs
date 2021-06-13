@@ -20,9 +20,30 @@ namespace CircusTreinFinalProj
     /// </summary>
     public partial class MainWindow : Window
     {
+        Train train = new Train();
+
+        Carnivore C5 = new Carnivore(AnimalSize.Large);
+        Carnivore C3 = new Carnivore(AnimalSize.Medium);
+        Carnivore C1 = new Carnivore(AnimalSize.Small);
+
+        Herbivore H5 = new Herbivore(AnimalSize.Large);
+        Herbivore H3 = new Herbivore(AnimalSize.Medium);
+        Herbivore H1 = new Herbivore(AnimalSize.Small);
         public MainWindow()
         {
             InitializeComponent();
+            fillTrain();
+            lbAnimalsTotal.ItemsSource = train.Animals;
+        }
+
+        public void fillTrain()
+        {
+            train.Animals.Add(C5);
+            train.Animals.Add(C3);
+            train.Animals.Add(C1);
+            train.Animals.Add(C5);
+            train.Animals.Add(C5);
+            train.Animals.Add(C5);
         }
     }
 }

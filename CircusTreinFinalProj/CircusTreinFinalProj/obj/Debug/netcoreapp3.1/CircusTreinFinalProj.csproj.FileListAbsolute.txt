@@ -1,0 +1,5 @@
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.csprojAssemblyReference.cache
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj_MarkupCompile.cache
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj_MarkupCompile.lref
