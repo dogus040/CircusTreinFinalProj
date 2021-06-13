@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTreinFinalProj", "CircusTreinFinalProj\CircusTreinFinalProj.csproj", "{B970E276-25E8-4ED4-8D6A-C61750019584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B970E276-25E8-4ED4-8D6A-C61750019584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B970E276-25E8-4ED4-8D6A-C61750019584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B970E276-25E8-4ED4-8D6A-C61750019584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B970E276-25E8-4ED4-8D6A-C61750019584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBEE8A5A-9134-4090-8D42-9A608DBC9D2A}
+	EndGlobalSection
+EndGlobal
