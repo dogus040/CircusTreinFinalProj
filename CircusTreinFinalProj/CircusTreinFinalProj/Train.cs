@@ -20,12 +20,12 @@ namespace CircusTreinFinalProj
             wagons.Add(wagon.createNewWagonWithEmptyList());
         }
 
-        public Wagon addNewWagonToTrain()
+        /* public Wagon addNewWagonToTrain()
         {
             Wagon wagon = new Wagon();
             wagon.Animals = new List<Animal>();
             wagons.Add(wagon);
             return wagon;
-        }
+        } */
     }
 }

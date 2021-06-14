@@ -25,14 +25,13 @@ namespace CircusTreinFinalProj
         {
             if (capacity >= (int)animal.AnimalSize)
             {
-                Animals.Add(animal);
                 int newCap = capacity - (int)animal.AnimalSize;
                 capacity = capacity - newCap;
                 return true;
             }
             else
             {
-                new Wagon().Animals.Add(animal);
+                createNewWagonWithEmptyList();
                 return false;
             }
         }

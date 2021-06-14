@@ -56,10 +56,6 @@ namespace CircusTreinFinalProj
         public void newListBox()
         {
             ListBox lb = new ListBox();
-            if (wagon.Capacity == 0)
-            {
-                lb.ItemsSource = new Wagon().Animals;
-            }
         }
     }
 }
