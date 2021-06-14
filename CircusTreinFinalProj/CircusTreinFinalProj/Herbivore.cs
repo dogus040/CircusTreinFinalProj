@@ -6,7 +6,7 @@ namespace CircusTreinFinalProj
 {
     public class Herbivore : Animal
     {
-        public Herbivore(AnimalSize animalSize)
+        public Herbivore(AnimalSizeEnum animalSize)
         {
             AnimalSize = animalSize;
         }

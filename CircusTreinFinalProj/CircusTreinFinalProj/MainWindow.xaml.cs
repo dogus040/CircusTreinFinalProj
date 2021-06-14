@@ -21,18 +21,20 @@ namespace CircusTreinFinalProj
     public partial class MainWindow : Window
     {
         Train train = new Train();
+        Wagon wagon = new Wagon();
 
-        Carnivore C5 = new Carnivore(AnimalSize.Large);
-        Carnivore C3 = new Carnivore(AnimalSize.Medium);
-        Carnivore C1 = new Carnivore(AnimalSize.Small);
+        Carnivore C5 = new Carnivore(AnimalSizeEnum.Large);
+        Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
+        Carnivore C1 = new Carnivore(AnimalSizeEnum.Small);
 
-        Herbivore H5 = new Herbivore(AnimalSize.Large);
-        Herbivore H3 = new Herbivore(AnimalSize.Medium);
-        Herbivore H1 = new Herbivore(AnimalSize.Small);
+        Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
+        Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
+        Herbivore H1 = new Herbivore(AnimalSizeEnum.Small);
         public MainWindow()
         {
             InitializeComponent();
             fillTrain();
+            lblCount.Content = wagon.Capacity;
         }
 
         public void fillTrain()
@@ -43,6 +45,7 @@ namespace CircusTreinFinalProj
             train.Animals.Add(H5);
             train.Animals.Add(H3);
             train.Animals.Add(H1);
+            wagon.doesAnimalFitIntoWagon(wagon, C5);
             lbAnimalsTotal.ItemsSource = train.Animals;
         }
     }

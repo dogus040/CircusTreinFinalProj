@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CircusTreinFinalProj
 {
-    public enum AnimalSize
+    public enum AnimalSizeEnum
     {
         Small = 1,
         Medium = 3,

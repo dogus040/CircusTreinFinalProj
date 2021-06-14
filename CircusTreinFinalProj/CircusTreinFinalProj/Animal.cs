@@ -6,8 +6,8 @@ namespace CircusTreinFinalProj
 {
     public class Animal
     {
-        private AnimalSize animalSize;
-        public AnimalSize AnimalSize
+        private AnimalSizeEnum animalSize;
+        public AnimalSizeEnum AnimalSize
         {
             get { return animalSize; } set { animalSize = value; }
         }
