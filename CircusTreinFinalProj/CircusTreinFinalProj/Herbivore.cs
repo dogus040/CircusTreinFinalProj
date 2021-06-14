@@ -15,7 +15,7 @@ namespace CircusTreinFinalProj
         {
             foreach (Animal animal in WagonAnimals)
             {
-                if (animal.GetType().Name == nameof(Carnivore) ) // controleer of je te maken hebt met een carnivoor
+                if (animal.GetType().Name == nameof(Carnivore)) // controleer of je te maken hebt met een carnivoor
                 {
                     if (AnimalSize <= animal.AnimalSize)
                     {

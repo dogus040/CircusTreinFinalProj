@@ -38,14 +38,28 @@ namespace CircusTreinFinalProj
 
         public void fillTrain()
         {
-            train.Animals.Add(C5);
-            train.Animals.Add(C3);
-            train.Animals.Add(C1);
-            train.Animals.Add(H5);
-            train.Animals.Add(H3);
-            train.Animals.Add(H1);
-            lblCount.Content = wagon.Capacity;
-            lbAnimalsTotal.ItemsSource = train.Animals;
+            if (wagon.doesAnimalFitIntoWagon(C5) == true && C5.isAnimalSafe(wagon.Animals) == true )
+            {
+                train.Animals.Add(C5);
+            }
+            if (wagon.doesAnimalFitIntoWagon(C3) == true && C3.isAnimalSafe(wagon.Animals) == true)
+            {
+                train.Animals.Add(C3);
+            }
+            if (wagon.doesAnimalFitIntoWagon(C1) == true && C1.isAnimalSafe(wagon.Animals) == true)
+            {
+                train.Animals.Add(C1);
+            }
+            lbAnimalsTotal.ItemsSource = wagon.Animals;
+        }
+
+        public void newListBox()
+        {
+            ListBox lb = new ListBox();
+            if (wagon.Capacity == 0)
+            {
+                lb.ItemsSource = new Wagon().Animals;
+            }
         }
     }
 }

@@ -6,12 +6,17 @@ namespace CircusTreinFinalProj
 {
     public class Wagon
     {
+
         private List<Animal> animals = new List<Animal>();
         private int capacity = 10;
-
         public List<Animal> Animals
         {
-            get { return animals; }
+            get { return animals; } set { animals = value; }
+        }
+
+        public Wagon()
+        {
+
         }
 
         public int Capacity { get { return capacity; } set { capacity = value; } }
@@ -27,9 +32,17 @@ namespace CircusTreinFinalProj
             }
             else
             {
-                new Wagon();
+                new Wagon().Animals.Add(animal);
                 return false;
             }
+        }
+
+        public Wagon createNewWagonWithEmptyList()
+        {
+            Wagon wagon = new Wagon();
+            List<Animal> animals = new List<Animal>();
+            wagon.Animals = animals;
+            return wagon;
         }
     }
 }
