@@ -3,3 +3,17 @@ C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\Ci
 C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj_MarkupCompile.cache
 C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj_MarkupCompile.lref
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.exe
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.deps.json
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.runtimeconfig.json
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.runtimeconfig.dev.json
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.dll
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\bin\Debug\netcoreapp3.1\CircusTreinFinalProj.pdb
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.g.resources
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.AssemblyInfoInputs.cache
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.AssemblyInfo.cs
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.csproj.CoreCompileInputs.cache
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.dll
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.pdb
+C:\Users\Prime\Documents\School\Fontys\Jaar_1\Semester 2\S-DB-S2-CMK\Oefening\CircusTreinFinalProj\CircusTreinFinalProj\CircusTreinFinalProj\obj\Debug\netcoreapp3.1\CircusTreinFinalProj.genruntimeconfig.cache

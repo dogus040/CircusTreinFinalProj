@@ -6,9 +6,14 @@ namespace CircusTreinFinalProj
 {
     public class Carnivore : Animal
     {
-        public Carnivore()
+        public Carnivore(AnimalSize animalSize)
         {
-            AnimalSize = animalSize;
+             AnimalSize = animalSize;
+        }
+
+        public override string ToString()
+        {
+            return "C" + (int)AnimalSize;
         }
     }
 }

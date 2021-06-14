@@ -8,7 +8,12 @@ namespace CircusTreinFinalProj
     {
         public Herbivore(AnimalSize animalSize)
         {
-            this.AnimalSize = (int)animalSize;
+            AnimalSize = animalSize;
+        }
+
+        public override string ToString()
+        {
+            return "H" + (int)AnimalSize;
         }
     }
 }

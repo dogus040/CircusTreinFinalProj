@@ -33,7 +33,6 @@ namespace CircusTreinFinalProj
         {
             InitializeComponent();
             fillTrain();
-            lbAnimalsTotal.ItemsSource = train.Animals;
         }
 
         public void fillTrain()
@@ -41,9 +40,10 @@ namespace CircusTreinFinalProj
             train.Animals.Add(C5);
             train.Animals.Add(C3);
             train.Animals.Add(C1);
-            train.Animals.Add(C5);
-            train.Animals.Add(C5);
-            train.Animals.Add(C5);
+            train.Animals.Add(H5);
+            train.Animals.Add(H3);
+            train.Animals.Add(H1);
+            lbAnimalsTotal.ItemsSource = train.Animals;
         }
     }
 }

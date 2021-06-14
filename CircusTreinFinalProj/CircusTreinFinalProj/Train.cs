@@ -8,6 +8,9 @@ namespace CircusTreinFinalProj
     {
         private List<Animal> animals = new List<Animal>();
 
-        public List<Animal> Animals { get; set; }
+        public List<Animal> Animals
+        {
+            get { return animals; }
+        }
     }
 }
