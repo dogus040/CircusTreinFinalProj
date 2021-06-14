@@ -16,13 +16,19 @@ namespace CircusTreinFinalProj
 
         public int Capacity { get { return capacity; } set { capacity = value; } }
 
-        public void doesAnimalFitIntoWagon(Wagon wagon, Animal animal)
+        public bool doesAnimalFitIntoWagon(Animal animal)
         {
-            if (wagon.Capacity >= (int)animal.AnimalSize)
+            if (capacity >= (int)animal.AnimalSize)
             {
-                wagon.Animals.Add(animal);
-                int newCap = wagon.Capacity - (int)animal.AnimalSize;
-                wagon.Capacity = newCap;
+                Animals.Add(animal);
+                int newCap = capacity - (int)animal.AnimalSize;
+                capacity = capacity - newCap;
+                return true;
+            }
+            else
+            {
+                new Wagon();
+                return false;
             }
         }
     }

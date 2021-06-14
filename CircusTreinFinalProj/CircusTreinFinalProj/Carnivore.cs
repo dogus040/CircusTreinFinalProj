@@ -15,5 +15,17 @@ namespace CircusTreinFinalProj
         {
             return "C" + (int)AnimalSize;
         }
+
+        public override bool isAnimalSafe(List<Animal> WagonAnimals)
+        {
+            foreach (Animal animal in WagonAnimals)
+            {
+                if (AnimalSize >= animal.AnimalSize)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

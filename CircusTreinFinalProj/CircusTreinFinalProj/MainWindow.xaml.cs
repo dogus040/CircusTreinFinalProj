@@ -34,7 +34,6 @@ namespace CircusTreinFinalProj
         {
             InitializeComponent();
             fillTrain();
-            lblCount.Content = wagon.Capacity;
         }
 
         public void fillTrain()
@@ -45,7 +44,7 @@ namespace CircusTreinFinalProj
             train.Animals.Add(H5);
             train.Animals.Add(H3);
             train.Animals.Add(H1);
-            wagon.doesAnimalFitIntoWagon(wagon, C5);
+            lblCount.Content = wagon.Capacity;
             lbAnimalsTotal.ItemsSource = train.Animals;
         }
     }
