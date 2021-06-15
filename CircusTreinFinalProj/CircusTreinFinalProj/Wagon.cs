@@ -9,6 +9,7 @@ namespace CircusTreinFinalProj
 
         private List<Animal> animals;
         private int capacity = 10;
+        private int iCounter = 0;
         public List<Animal> Animals
         {
             get { return animals; } set { animals = value; }
@@ -16,6 +17,7 @@ namespace CircusTreinFinalProj
 
         public Wagon()
         {
+            iCounter++;
             animals = new List<Animal>();
         }
 
@@ -25,29 +27,29 @@ namespace CircusTreinFinalProj
         {
             if (capacity >= (int)animal.AnimalSize)
             {
-                int newCap = capacity - (int)animal.AnimalSize;
-                capacity = capacity - newCap;
                 return true;
             }
             else return false;
         }
-        public void addAnimalToWagon(Animal animal)
+
+        public void decreaseWagonCapacity(Animal animal)
         {
-            if (canAddAnimal(animal))
-            {
-                animals.Add(animal);
-            }
-                   
-                
+            int newCap = capacity - (int)animal.AnimalSize;
+            capacity = newCap;
         }
 
-        public bool canAddAnimal(Animal newAnimal)
-        { 
-            if (newAnimal.isAnimalSafe(Animals) == true && doesAnimalFitIntoWagon(newAnimal) == true)
+        public void addAnimalToWagon(Animal animal)
+        {
+            if (doesAnimalFitIntoWagon(animal))
             {
-                return true;
+                decreaseWagonCapacity(animal);
+                Animals.Add(animal);
             }
-            return false;
+        }
+
+        public override string ToString()
+        {
+            return "Wagon " + iCounter;
         }
 
     }

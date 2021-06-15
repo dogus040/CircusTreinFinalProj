@@ -11,11 +11,6 @@ namespace CircusTreinFinalProj
             AnimalSize = animalSize;
         }
 
-        public Herbivore()
-        {
-
-        }
-
         public override bool isAnimalSafe(List<Animal> WagonAnimals)
         {
             foreach (Animal animal in WagonAnimals)

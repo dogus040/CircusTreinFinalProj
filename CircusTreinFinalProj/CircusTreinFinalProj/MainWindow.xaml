@@ -6,12 +6,6 @@
         xmlns:local="clr-namespace:CircusTreinFinalProj"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="lbAnimalsTotal" Margin="246,53,246,258"/>
-        <Label Content="Totaal aantal dieren" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lblAnimalsinWagons" Margin="246,280,246,31"/>
-        <Label Content="Dieren in wagons" HorizontalAlignment="Center" Margin="0,233,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCount" Content="Label" HorizontalAlignment="Left" Margin="148,78,0,0" VerticalAlignment="Top"/>
-
+    <Grid x:Name="gridLayout">
     </Grid>
 </Window>
