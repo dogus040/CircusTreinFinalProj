@@ -6,26 +6,46 @@ namespace CircusTreinFinalProj
 {
     public class Train
     {
-        Wagon wagon = new Wagon();
-        private List<Animal> animals = new List<Animal>();
-        private List<Wagon> wagons = new List<Wagon>();
+        private List<Animal> animals;
+        private List<Wagon> wagons;
 
         public List<Animal> Animals
         {
             get { return animals; }
         }
 
-        public void addWagon()
+        public List<Wagon> Wagons
         {
-            wagons.Add(wagon.createNewWagonWithEmptyList());
+            get { return wagons; }
         }
 
-        /* public Wagon addNewWagonToTrain()
+        public Train()
         {
-            Wagon wagon = new Wagon();
-            wagon.Animals = new List<Animal>();
+            animals = new List<Animal>();
+            wagons = new List<Wagon>();
+        }
+
+        public void addAnimalToWagon(Animal animal, Wagon wagon)
+        {
+            if (animal.isAnimalSafe(Animals) == true && wagon.doesAnimalFitIntoWagon(animal) == true)
+            {
+                Animals.Add(animal);
+            }
+            else wagon.addAnimalToNewWagon(animal);
+        }
+
+        public void spreadAnimals(Wagon wagon)
+        {
+            foreach (Animal animal in Animals)
+            {
+                addAnimalToWagon(animal, wagon);
+            }
+        }
+
+        public void addWagonToTrainWithAnimal(Animal animal, Wagon wagon)
+        {
+            addAnimalToWagon(animal, wagon);
             wagons.Add(wagon);
-            return wagon;
-        } */
+        }
     }
 }

@@ -30,32 +30,29 @@ namespace CircusTreinFinalProj
         Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
         Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
         Herbivore H1 = new Herbivore(AnimalSizeEnum.Small);
+
         public MainWindow()
         {
             InitializeComponent();
+            train.Animals.Add(C5);
+            train.Animals.Add(H3);
             fillTrain();
+            //newListBox();
         }
 
         public void fillTrain()
         {
-            if (wagon.doesAnimalFitIntoWagon(C5) == true && C5.isAnimalSafe(wagon.Animals) == true )
-            {
-                train.Animals.Add(C5);
-            }
-            if (wagon.doesAnimalFitIntoWagon(C3) == true && C3.isAnimalSafe(wagon.Animals) == true)
-            {
-                train.Animals.Add(C3);
-            }
-            if (wagon.doesAnimalFitIntoWagon(C1) == true && C1.isAnimalSafe(wagon.Animals) == true)
-            {
-                train.Animals.Add(C1);
-            }
-            lbAnimalsTotal.ItemsSource = wagon.Animals;
+            train.spreadAnimals(wagon);
         }
 
-        public void newListBox()
+        /*public void newListBox()
         {
-            ListBox lb = new ListBox();
-        }
+            foreach (var wagon in train.Wagons)
+            {
+                Window w = new Window();
+                w.Show();
+            }
+            lb.ItemsSource = wagon.Animals;
+        } */
     }
 }
