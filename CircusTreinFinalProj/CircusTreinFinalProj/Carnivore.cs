@@ -11,11 +11,6 @@ namespace CircusTreinFinalProj
              AnimalSize = animalSize;
         }
 
-        public Carnivore()
-        {
-
-        }
-
         public override string ToString()
         {
             return "C" + (int)AnimalSize;

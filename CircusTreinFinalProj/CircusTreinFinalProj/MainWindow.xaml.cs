@@ -33,10 +33,13 @@ namespace CircusTreinFinalProj
         public MainWindow()
         {
             InitializeComponent();
-            train.Animals.Add(C5);
-            train.Animals.Add(H3);
+            train.Animals.Add(C1);
+            train.Animals.Add(H1);
+
+
+
             fillTrain();
-            //newListBox();
+            newListBox();
         }
 
         public void fillTrain()
@@ -44,14 +47,19 @@ namespace CircusTreinFinalProj
             train.spreadAnimals();
         }
 
-        /*public void newListBox()
+        public void newListBox()
         {
-            foreach (var wagon in train.Wagons)
+            StackPanel sp = new StackPanel() { Orientation = Orientation.Vertical};
+            foreach (Wagon wagon in train.Wagons)
             {
-                Window w = new Window();
-                w.Show();
+                ListBox lb = new ListBox()
+                {
+                    ItemsSource = wagon.Animals,
+                    Background = Brushes.Red
+                };
+                sp.Children.Add(lb);
             }
-            lb.ItemsSource = wagon.Animals;
-        } */
+            gridLayout.Children.Add(sp);
+        }
     }
 }

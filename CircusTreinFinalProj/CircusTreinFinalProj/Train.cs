@@ -29,22 +29,20 @@ namespace CircusTreinFinalProj
         {
             foreach (Animal animal in Animals)
             {
-                //doe iets zodat je door elke wagon gaat en checkt
-                //oof hij erin past
-                SearchForWagon(animal).;
+                SearchForWagon(animal).addAnimalToWagon(animal);
             }
         }
         public Wagon SearchForWagon(Animal animal)
         {
             foreach (Wagon item in Wagons)
             {
-                if (item.doesAnimalFitIntoWagon(animal) )
+                if (item.doesAnimalFitIntoWagon(animal) && animal.isAnimalSafe(item.Animals))
                 {
                     return item;
                 }
             }
             Wagon wagon = new Wagon();
-            addWagonToWagonList(wagon);
+            wagons.Add(wagon);
             return wagon;
         }
 
