@@ -22,29 +22,34 @@ namespace CircusTreinFinalProj
         public Train()
         {
             animals = new List<Animal>();
-            wagons = new List<Wagon>();
+            wagons = new List<Wagon>() { new Wagon() };
         }
 
-        public void addAnimalToWagon(Animal animal, Wagon wagon)
-        {
-            if (animal.isAnimalSafe(Animals) == true && wagon.doesAnimalFitIntoWagon(animal) == true)
-            {
-                Animals.Add(animal);
-            }
-            else wagon.addAnimalToNewWagon(animal);
-        }
-
-        public void spreadAnimals(Wagon wagon)
+        public void spreadAnimals()
         {
             foreach (Animal animal in Animals)
             {
-                addAnimalToWagon(animal, wagon);
+                //doe iets zodat je door elke wagon gaat en checkt
+                //oof hij erin past
+                SearchForWagon(animal).;
             }
         }
-
-        public void addWagonToTrainWithAnimal(Animal animal, Wagon wagon)
+        public Wagon SearchForWagon(Animal animal)
         {
-            addAnimalToWagon(animal, wagon);
+            foreach (Wagon item in Wagons)
+            {
+                if (item.doesAnimalFitIntoWagon(animal) )
+                {
+                    return item;
+                }
+            }
+            Wagon wagon = new Wagon();
+            addWagonToWagonList(wagon);
+            return wagon;
+        }
+
+        public void addWagonToWagonList(Wagon wagon)
+        {
             wagons.Add(wagon);
         }
     }

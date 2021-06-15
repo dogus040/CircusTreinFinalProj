@@ -21,7 +21,6 @@ namespace CircusTreinFinalProj
     public partial class MainWindow : Window
     {
         Train train = new Train();
-        Wagon wagon = new Wagon();
 
         Carnivore C5 = new Carnivore(AnimalSizeEnum.Large);
         Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
@@ -42,7 +41,7 @@ namespace CircusTreinFinalProj
 
         public void fillTrain()
         {
-            train.spreadAnimals(wagon);
+            train.spreadAnimals();
         }
 
         /*public void newListBox()

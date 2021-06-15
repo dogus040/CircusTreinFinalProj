@@ -9,7 +9,6 @@ namespace CircusTreinFinalProj
 
         private List<Animal> animals;
         private int capacity = 10;
-        Train train = new Train();
         public List<Animal> Animals
         {
             get { return animals; } set { animals = value; }
@@ -32,11 +31,24 @@ namespace CircusTreinFinalProj
             }
             else return false;
         }
-
-        public void addAnimalToNewWagon(Animal animal)
+        public void addAnimalToWagon(Animal animal)
         {
-            Wagon wagon = new Wagon();
-            train.addWagonToTrainWithAnimal(animal, wagon);
+            if (canAddAnimal(animal))
+            {
+                animals.Add(animal);
+            }
+                   
+                
         }
+
+        public bool canAddAnimal(Animal newAnimal)
+        { 
+            if (newAnimal.isAnimalSafe(Animals) == true && doesAnimalFitIntoWagon(newAnimal) == true)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }
