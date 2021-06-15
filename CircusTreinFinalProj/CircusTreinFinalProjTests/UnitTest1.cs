@@ -7,7 +7,7 @@ namespace CircusTreinFinalProjTests
     public class UnitTest1
     {
         [TestMethod]
-        public void checkAmountOfWagonsCreated()
+        public void check_That_Carnivores_Can_Be_Added_To_Wagon_With_Larger_Herbivores()
         {
             Train train = new Train();
 
@@ -21,7 +21,7 @@ namespace CircusTreinFinalProjTests
         }
 
         [TestMethod]
-        public void checkIfWagonsAreSeperate()
+        public void check_That_Carnivores_Cant_Be_In_Same_Wagon()
         {
             Train train = new Train();
 
@@ -36,6 +36,38 @@ namespace CircusTreinFinalProjTests
             train.spreadAnimals();
 
             Assert.AreEqual(3, train.Wagons.Count);
+        }
+
+        [TestMethod]
+        public void check_For_Large_Herbivore_And_Medium_Carnivore_Are_In_Same_Wagon()
+        {
+            Train train = new Train();
+
+            Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
+            Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
+
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
+
+            train.spreadAnimals();
+
+            Assert.AreEqual(1, train.Wagons.Count);
+        }
+
+        [TestMethod]
+        public void check_For_Large_Herbivore_And_Medium_Carnivore_Are_In_Same_Wagon()
+        {
+            Train train = new Train();
+
+            Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
+            Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
+
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
+
+            train.spreadAnimals();
+
+            Assert.AreEqual(1, train.Wagons.Count);
         }
     }
 }
