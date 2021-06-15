@@ -29,6 +29,10 @@ namespace CircusTreinFinalProjTests
             Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
             Carnivore C5 = new Carnivore(AnimalSizeEnum.Large);
 
+            train.Animals.Add(C1);
+            train.Animals.Add(C3);
+            train.Animals.Add(C5);
+
             train.spreadAnimals();
 
             Assert.AreEqual(3, train.Wagons.Count);

@@ -9,7 +9,6 @@ namespace CircusTreinFinalProj
 
         private List<Animal> animals;
         private int capacity = 10;
-        private int iCounter = 0;
         public List<Animal> Animals
         {
             get { return animals; } set { animals = value; }
@@ -17,7 +16,6 @@ namespace CircusTreinFinalProj
 
         public Wagon()
         {
-            iCounter++;
             animals = new List<Animal>();
         }
 
@@ -49,7 +47,7 @@ namespace CircusTreinFinalProj
 
         public override string ToString()
         {
-            return "Wagon " + iCounter;
+            return "Wagon";
         }
 
     }
