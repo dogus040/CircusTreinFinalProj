@@ -5740,9 +5740,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Prime\\Documents\\School\\Fontys\\Jaar_1\\Semester 2\\S-DB-S2-CMK\\Oefening\\CircusTreinFinalProj\\CircusTreinFinalProj\\CircusTreinFinalProjTests\\CircusTreinFinalProjTests.csproj",
-      "projectName": "CircusTreinFinalProjTests",
-      "projectPath": "C:\\Users\\Prime\\Documents\\School\\Fontys\\Jaar_1\\Semester 2\\S-DB-S2-CMK\\Oefening\\CircusTreinFinalProj\\CircusTreinFinalProj\\CircusTreinFinalProjTests\\CircusTreinFinalProjTests.csproj",
+      "projectUniqueName": "C:\\Users\\Prime\\Documents\\School\\Fontys\\Jaar_1\\Semester 2\\S-DB-S2-CMK\\Oefening\\CircusTreinFinalProj\\CircusTreinFinalProj\\CircusTreinFinalProjTests\\CircusTreinFinalProj_UnitTests.csproj",
+      "projectName": "CircusTreinFinalProj_UnitTests",
+      "projectPath": "C:\\Users\\Prime\\Documents\\School\\Fontys\\Jaar_1\\Semester 2\\S-DB-S2-CMK\\Oefening\\CircusTreinFinalProj\\CircusTreinFinalProj\\CircusTreinFinalProjTests\\CircusTreinFinalProj_UnitTests.csproj",
       "packagesPath": "C:\\Users\\Prime\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Prime\\Documents\\School\\Fontys\\Jaar_1\\Semester 2\\S-DB-S2-CMK\\Oefening\\CircusTreinFinalProj\\CircusTreinFinalProj\\CircusTreinFinalProjTests\\obj\\",
       "projectStyle": "PackageReference",

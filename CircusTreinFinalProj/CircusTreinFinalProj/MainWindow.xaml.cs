@@ -33,10 +33,19 @@ namespace CircusTreinFinalProj
         public MainWindow()
         {
             InitializeComponent();
-            train.Animals.Add(C1);
+
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
             train.Animals.Add(H1);
-
-
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
+            train.Animals.Add(H1);
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
+            train.Animals.Add(H1);
+            train.Animals.Add(C3);
+            train.Animals.Add(H5);
+            train.Animals.Add(H1);
 
             fillTrain();
             newListBox();
@@ -49,7 +58,7 @@ namespace CircusTreinFinalProj
 
         public void newListBox()
         {
-            StackPanel sp = new StackPanel() { Orientation = Orientation.Vertical};
+            StackPanel sp = new StackPanel() { Orientation = Orientation.Horizontal};
             foreach (Wagon wagon in train.Wagons)
             {
                 ListBox lb = new ListBox()
