@@ -29,7 +29,7 @@ namespace CircusTreinFinalProj_UnitTests
             train.Animals.Add(C1); // lijst van animals in de trein, zonder wagon, dit zijn alle animals die je wilt verdelen.
 
 
-            train.spreadAnimalsToWagons();
+            train.spreadAnimals();
             
             // Assert
 
@@ -40,7 +40,7 @@ namespace CircusTreinFinalProj_UnitTests
         }
 
         [TestMethod]
-        public void checkSearchForWagonExpectSameWagon() // hier wordt de if gechecked van searchForWagon method
+        public void checkSearchForWagonExpectSameWagon() // return een wagon waar de animal in past
         {
             // Arrange
 
@@ -61,48 +61,52 @@ namespace CircusTreinFinalProj_UnitTests
             Herbivore w2_H5 = new Herbivore(AnimalSizeEnum.Large);
 
             Herbivore addedAnimal_H1 = new Herbivore(AnimalSizeEnum.Small); // deze herbivore wordt gebruikt in de method om te checken of die bij een van de wagons past.
+
             // Act
-            train.SearchForWagon(H1);
+
+            train.Wagons[0].Animals.Add(H1); // wagon met herbivores
+            train.Wagons[0].Animals.Add(H3);
+            train.Wagons[0].Animals.Add(H5);
+
+            train.Wagons.Add(wagon2); // wagon aan lijst van wagons toevoegen voor Assert vergelijking.
+
+            train.Wagons[1].Animals.Add(w2_C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
+            train.Wagons[1].Animals.Add(w2_H3);
+            train.Wagons[1].Animals.Add(w2_H5);
 
             // Assert
 
-            Assert.AreEqual(false, doesAnimalFit); // animal die toegevoegd gaat worden
+            Assert.AreEqual(train.Wagons[0], train.SearchForWagon(addedAnimal_H1)); // check of wagon die wordt gereturned een wagon is die niet vol is en of isAnimalSafe true is.
+            Assert.AreNotEqual(train.Wagons[1], train.SearchForWagon(addedAnimal_H1)); // check dat wagon met carnivoren niet wordt gereturned.
         }
 
         [TestMethod]
-        public void checkDecreaseWagonCapacity()
+        public void checkSearchForWagonExpectNewWagon() // return een nieuwe aangemaakte wagon.
         {
             // Arrange
 
-            Wagon wagon = new Wagon();
+            Train train = new Train(); //
 
+            //je ziet dat er geen wagon wordt aangemaakt omdat bij het instancieren van Train class automatisch een wagon wordt aangemaakt
+
+            // deze bevinden zich in de eerste wagon
+            Carnivore C1 = new Carnivore(AnimalSizeEnum.Small);
             Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
+            Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
+
+            Herbivore addedAnimal_H1 = new Herbivore(AnimalSizeEnum.Small); // deze herbivore wordt gebruikt in de method om te checken of die bij een van de wagons past.
 
             // Act
 
-            wagon.decreaseWagonCapacity(H3);
+            train.Wagons[0].Animals.Add(C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
+            train.Wagons[0].Animals.Add(H3);
+            train.Wagons[0].Animals.Add(H5);
 
             // Assert
 
-            Assert.AreEqual(7, wagon.Capacity);
-        }
+            train.SearchForWagon(addedAnimal_H1);
 
-        [TestMethod]
-        public void checkAddAnimalToWagon()
-        {
-            // Arrange
-
-            Wagon wagon = new Wagon();
-
-            Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
-
-            // Act
-
-            wagon.addAnimalToWagon(H3);
-
-            // Assert
-
-            Assert.AreEqual(H3, wagon.Animals[0]);
+            Assert.AreEqual(train.Wagons[1], train.SearchForWagon(addedAnimal_H1)); // return een nieuw aangemaakte wagon die leeg is.
         }
     }
 }

@@ -45,10 +45,5 @@ namespace CircusTreinFinalProj
             wagons.Add(wagon);
             return wagon;
         }
-
-        public void addWagonToWagonList(Wagon wagon)
-        {
-            wagons.Add(wagon);
-        }
     }
 }
