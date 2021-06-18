@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircusTreinFinalProj", "CircusTreinFinalProj\CircusTreinFinalProj.csproj", "{B970E276-25E8-4ED4-8D6A-C61750019584}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircusTreinFinalProj_UnitTests", "CircusTreinFinalProjTests\CircusTreinFinalProj_UnitTests.csproj", "{820C5B68-55A1-4493-9650-A851D1B203EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTreinFinalProj_IntegTests", "CircusTreinFinalProj_IntegTests\CircusTreinFinalProj_IntegTests.csproj", "{22C8500C-7A94-42A9-AC6A-BD9412F5C2ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B970E276-25E8-4ED4-8D6A-C61750019584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B970E276-25E8-4ED4-8D6A-C61750019584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B970E276-25E8-4ED4-8D6A-C61750019584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820C5B68-55A1-4493-9650-A851D1B203EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820C5B68-55A1-4493-9650-A851D1B203EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820C5B68-55A1-4493-9650-A851D1B203EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820C5B68-55A1-4493-9650-A851D1B203EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C8500C-7A94-42A9-AC6A-BD9412F5C2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C8500C-7A94-42A9-AC6A-BD9412F5C2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C8500C-7A94-42A9-AC6A-BD9412F5C2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C8500C-7A94-42A9-AC6A-BD9412F5C2ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
