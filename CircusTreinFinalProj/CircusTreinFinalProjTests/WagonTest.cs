@@ -21,12 +21,12 @@ namespace CircusTreinFinalProj_UnitTests
 
             // Act
 
-            wagon.Animals.Add(H5); // wagon vullen voor vergelijking.
+            wagon.addAnimalToWagon(H5); // wagon vullen voor vergelijking.
             doesAnimalFit = wagon.doesAnimalFitIntoWagon(H3);
 
             // Assert
 
-            Assert.AreEqual(true, doesAnimalFit);  // animal die toegevoegd gaat worden
+            Assert.IsTrue(doesAnimalFit);  // animal die toegevoegd gaat worden
         }
 
         [TestMethod]
@@ -40,19 +40,21 @@ namespace CircusTreinFinalProj_UnitTests
 
             Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
             Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
+            Herbivore H1 = new Herbivore(AnimalSizeEnum.Large);
+
+            Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
 
             // Act
 
-            for (int i = 0; i < 2; i++)
-            {
-                wagon.Animals.Add(H5); // wagon vullen voor vergelijking.
-            }
+            wagon.addAnimalToWagon(H3);
+            wagon.addAnimalToWagon(H5);
+            wagon.addAnimalToWagon(H1);
 
-            doesAnimalFit = wagon.doesAnimalFitIntoWagon(H3);
+            doesAnimalFit = wagon.doesAnimalFitIntoWagon(C3);
 
             // Assert
 
-            Assert.AreEqual(false, doesAnimalFit); // animal die toegevoegd gaat worden
+            Assert.IsFalse(doesAnimalFit); // animal die toegevoegd gaat worden
         }
 
         [TestMethod]
