@@ -22,38 +22,27 @@ namespace CircusTreinFinalProj
     {
         Train train = new Train();
 
-        Carnivore C5 = new Carnivore(AnimalSizeEnum.Large);
-        Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
-        Carnivore C1 = new Carnivore(AnimalSizeEnum.Small);
-
-        Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
-        Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
-        Herbivore H1 = new Herbivore(AnimalSizeEnum.Small);
+        List<Animal> animals = new List<Animal>()
+                {
+                    new Carnivore(AnimalSizeEnum.Small), new Carnivore(AnimalSizeEnum.Medium), new Carnivore(AnimalSizeEnum.Medium),
+                    new Carnivore(AnimalSizeEnum.Medium), new Carnivore(AnimalSizeEnum.Medium), new Carnivore(AnimalSizeEnum.Medium),
+                    new Carnivore(AnimalSizeEnum.Large), new Herbivore(AnimalSizeEnum.Large), new Herbivore(AnimalSizeEnum.Large),
+                    new Herbivore(AnimalSizeEnum.Large), new Herbivore(AnimalSizeEnum.Large), new Herbivore(AnimalSizeEnum.Large),
+                    new Herbivore(AnimalSizeEnum.Medium), new Herbivore(AnimalSizeEnum.Medium), new Herbivore(AnimalSizeEnum.Small),
+                    new Herbivore(AnimalSizeEnum.Small)
+                };
 
         public MainWindow()
         {
             InitializeComponent();
 
-            train.Animals.Add(C3);
-            train.Animals.Add(H5);
-            train.Animals.Add(H1);
-            train.Animals.Add(C3);
-            train.Animals.Add(H5);
-            train.Animals.Add(H1);
-            train.Animals.Add(C3);
-            train.Animals.Add(H5);
-            train.Animals.Add(H1);
-            train.Animals.Add(C3);
-            train.Animals.Add(H5);
-            train.Animals.Add(H1);
+            foreach (Animal animal in animals)
+            {
+                train.Animals.Add(animal);
+            }
 
-            fillTrain();
-            newListBox();
-        }
-
-        public void fillTrain()
-        {
             train.spreadAnimals();
+            newListBox();
         }
 
         public void newListBox()
