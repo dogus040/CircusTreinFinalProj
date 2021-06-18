@@ -49,20 +49,21 @@ namespace CircusTreinFinalProjTests
         {
             // Arrange
 
-            Train train = new Train();
-
             Wagon wagon = new Wagon();
 
             Carnivore C3 = new Carnivore(AnimalSizeEnum.Medium);
             Herbivore H5 = new Herbivore(AnimalSizeEnum.Large);
 
+            bool isSafe;
+
             // Act
 
             wagon.Animals.Add(C3); // een dier die zich in een wagon bevind
+            isSafe = H5.isAnimalSafe(wagon.Animals);
 
             // Assert
 
-            Assert.AreEqual(true , H5.isAnimalSafe(wagon.Animals) /* het dier wat toegevoegd wordt. */);
+            Assert.IsTrue(isSafe); // het dier wat toegevoegd wordt
         }
 
         [TestMethod]
@@ -70,20 +71,21 @@ namespace CircusTreinFinalProjTests
         {
             // Arrange
 
-            Train train = new Train();
-
             Wagon wagon = new Wagon();
 
             Carnivore C5 = new Carnivore(AnimalSizeEnum.Large);
             Herbivore H3 = new Herbivore(AnimalSizeEnum.Medium);
 
+            bool isSafe;
+
             // Act
 
             wagon.Animals.Add(C5); // een dier die zich in een wagon bevind
+            isSafe = H3.isAnimalSafe(wagon.Animals);
 
             // Assert
 
-            Assert.AreEqual(false, H3.isAnimalSafe(wagon.Animals));
+            Assert.IsFalse(isSafe);
         }
     }
 }

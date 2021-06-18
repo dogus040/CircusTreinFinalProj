@@ -33,9 +33,9 @@ namespace CircusTreinFinalProj_UnitTests
             
             // Assert
 
-            Assert.AreEqual(H3 , train.Wagons[0].Animals[0]); // check of object zich in de lijst van animals bevind van de wagon
+            Assert.AreEqual(H3 , train.Wagons[0].Animals[0]); // check of herbivore zich in de lijst van animals bevind van de wagon
             Assert.AreEqual(H5 , train.Wagons[0].Animals[1]);
-            Assert.AreEqual(C5, train.Wagons[1].Animals[0]); // Carnivore wordt in een aparte wagon gegooid vanwege isAnimalSafe && DoesAnimalFitIntoWagon check.
+            Assert.AreEqual(C5, train.Wagons[1].Animals[0]); // carnivore wordt in een aparte wagon gegooid vanwege isAnimalSafe && DoesAnimalFitIntoWagon check.
             Assert.AreEqual(C1, train.Wagons[0].Animals[2]);
         }
 
@@ -64,15 +64,15 @@ namespace CircusTreinFinalProj_UnitTests
 
             // Act
 
-            train.Wagons[0].Animals.Add(H1); // wagon met herbivores
-            train.Wagons[0].Animals.Add(H3);
-            train.Wagons[0].Animals.Add(H5);
+            train.Wagons[0].addAnimalToWagon(H1); // wagon met herbivores
+            train.Wagons[0].addAnimalToWagon(H3);
+            train.Wagons[0].addAnimalToWagon(H5);
 
             train.Wagons.Add(wagon2); // wagon aan lijst van wagons toevoegen voor Assert vergelijking.
 
-            train.Wagons[1].Animals.Add(w2_C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
-            train.Wagons[1].Animals.Add(w2_H3);
-            train.Wagons[1].Animals.Add(w2_H5);
+            train.Wagons[1].addAnimalToWagon(w2_C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
+            train.Wagons[1].addAnimalToWagon(w2_H3);
+            train.Wagons[1].addAnimalToWagon(w2_H5);
 
             // Assert
 
@@ -98,13 +98,13 @@ namespace CircusTreinFinalProj_UnitTests
 
             // Act
 
-            train.Wagons[0].Animals.Add(C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
-            train.Wagons[0].Animals.Add(H3);
-            train.Wagons[0].Animals.Add(H5);
+            train.Wagons[0].addAnimalToWagon(C1); //deze wagon kan nooit gereturned worden omdat herbivore hier conflicten heeft.
+            train.Wagons[0].addAnimalToWagon(H3);
+            train.Wagons[0].addAnimalToWagon(H3);
 
             // Assert
 
-            train.SearchForWagon(addedAnimal_H1);
+            train.SearchForWagon(addedAnimal_H1);  
 
             Assert.AreEqual(train.Wagons[1], train.SearchForWagon(addedAnimal_H1)); // return een nieuw aangemaakte wagon die leeg is.
         }
